@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-  res.send('kobasj');
+  res.send('<h1>Store api</h1> <a href="api/v1/products">store</a>');
 });
 
 app.use('/api/v1/products', productRouter);

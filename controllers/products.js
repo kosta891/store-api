@@ -43,9 +43,7 @@ const getAllProducts = async (req, res) => {
         queryObject[field] = { [operator]: Number(value) };
       }
     });
-    console.log(result);
   }
-  console.log(queryObject);
 
   let result = Product.find(queryObject);
 
